@@ -1,9 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 body {
   color: black;
-  background-image: url(public/images/backgroundyeezy.jpg); }
+  margin: 0px;
+  font-family: Montserrat; }
 
 nav a {
-  display: inline-block;
+  display: inline;
   color: black;
   padding-right: 10px;
   text-align: center; }
@@ -11,12 +13,17 @@ nav a:hover {
   color: #363636; }
 nav ul {
   text-align: center;
-  font-size: 15px;
-  display: inline-block; }
+  font-size: 15px; }
 
 nav {
   background-color: grey;
   height: 8%;
-  margin: 0px; }
+  position: fixed;
+  width: 100%; }
+
+.main {
+  height: 100%;
+  background-image: url("public/images/backgroundyeezy.jpg");
+  color: black; }
 
 /*# sourceMappingURL=sass.css.map */
