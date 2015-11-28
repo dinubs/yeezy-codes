@@ -1,0 +1,22 @@
+body {
+  color: black;
+  background-image: url(public/images/backgroundyeezy.jpg); }
+
+nav a {
+  display: inline-block;
+  color: black;
+  padding-right: 10px;
+  text-align: center; }
+nav a:hover {
+  color: #363636; }
+nav ul {
+  text-align: center;
+  font-size: 15px;
+  display: inline-block; }
+
+nav {
+  background-color: grey;
+  height: 8%;
+  margin: 0px; }
+
+/*# sourceMappingURL=sass.css.map */
