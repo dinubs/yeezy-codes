@@ -1,9 +1,10 @@
 var website = angular.module('app', ['app.controllers', 'ui.router']);
 
-angular.module('directives', []).
+website.
     directive('gist', function() {
         return function(scope, elm, attrs) {
-            var gistId = scope.gistId;
+            console.log(attrs);
+            var gistId = attrs.gist;
 
             var iframe = document.createElement('iframe');
             iframe.setAttribute('width', '100%');
