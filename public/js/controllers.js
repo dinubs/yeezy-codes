@@ -15,6 +15,8 @@ webctrl.controller('leftTabCtrl', function() {
         class: 'test2',
         whichstate: 'javascript',
         content: 'testw'
+    }, {
+
     }];
 
     $scope.products = leftabcontent;

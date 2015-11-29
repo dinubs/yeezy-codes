@@ -5,7 +5,7 @@ website.run(function ($state, $rootScope, $stateParams) {
     //makes states work with html5
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
-    $state.go('home')
+    $state.go('home');
 });
 
 website.config(function($locationProvider, $stateProvider) {
