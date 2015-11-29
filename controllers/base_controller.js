@@ -4,5 +4,8 @@ module.exports = {
   },
   socketIO: function(req, res) {
     res.view('base/socketio');
+  },
+  landing: function(req, res) {
+    res.view('base/landing');
   }
 }
