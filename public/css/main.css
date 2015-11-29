@@ -70,4 +70,7 @@ body {
       color: #9f9f9f;
       margin-left: -10px; }
 
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(public/img/background.jpg); }
+
 /*# sourceMappingURL=main.css.map */
