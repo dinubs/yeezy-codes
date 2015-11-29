@@ -10,7 +10,7 @@ module.exports = function(server) {
     socket.on('run', function(code) {
       var command = exec('node -e "' + code + '"', function(err, stdout, stderr) {
         if (err !== null) {
-          socket.emit('output', err);
+          socket.emit('output', err.toString());
         }
         output = stdout.split('\n');
 
