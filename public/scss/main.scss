@@ -65,6 +65,7 @@ a {
 }
 
 button {
+  display: block;
   cursor: pointer;
   background-color: $yeezyRed;
   border: none;
@@ -77,6 +78,25 @@ button {
   &:hover {
     background-color: $yeezyDarkRed;
   }
+}
+
+.col-3 {
+  width: 25%;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.col-9 {
+  width: 75%;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 200px;
 }
 
 @import 'landing';

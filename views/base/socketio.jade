@@ -1,14 +1,15 @@
 extends ../layouts/application
 
 block content
-  textarea.code.
-    var fs = require('fs');
-    fs.readdir('./', function (err, data) {
-      if (err) {return console.error(err);}
-      console.log('ok');
-      console.log('Asynchronous read: ' + data);
-    });
-  button.run Run Code
-  .ran-code
+  .wrap
+    textarea.code.
+      var fs = require('fs');
+      fs.readdir('./', function (err, data) {
+        if (err) {return console.error(err);}
+        console.log('ok');
+        console.log('Asynchronous read: ' + data);
+      });
+    button.run Run Code
+    .ran-code
   script(src="/socket.io/socket.io.js")
   script(src="/js/socket.js")

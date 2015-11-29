@@ -8,15 +8,19 @@ webctrl.controller('leftTabCtrl', function($scope, $state) {
 
     //this is the content located in the sidebar
     var leftTabContent = [{
-        class: 'test',
+        class: 'intro',
         whichstate: 'intro',
         content: 'Introduction',
         //sub catagories
         subCats: ['test', 'testtyytesst']
     }, {
-        class: 'test2',
+        class: 'css',
+        whichstate: 'css',
+        content: 'HTML/CSS'
+    }, {
+        class: 'javascript',
         whichstate: 'javascript',
-        content: 'testw'
+        content: 'Javascript'
     }, {
 
     }];

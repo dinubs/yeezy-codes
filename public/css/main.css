@@ -39,6 +39,7 @@ a {
     color: #ae010d; }
 
 button {
+  display: block;
   cursor: pointer;
   background-color: #FA0213;
   border: none;
@@ -48,6 +49,23 @@ button {
   transition: all 0.3s; }
   button:hover {
     background-color: #ae010d; }
+
+.col-3 {
+  width: 25%; }
+  @media (max-width: 480px) {
+    .col-3 {
+      width: 100%; } }
+
+.col-9 {
+  width: 75%; }
+  @media (max-width: 480px) {
+    .col-9 {
+      width: 100%; } }
+
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 200px; }
 
 #yeezyhead {
   height: calc(100vh - 50px);
