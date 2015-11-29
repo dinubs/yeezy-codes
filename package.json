@@ -12,6 +12,7 @@
     "hapi": "^8.8.0",
     "hapi-locals": "^0.1.5",
     "jade": "^1.11.0",
-    "mongoose": "^4.1.4"
+    "mongoose": "^4.1.4",
+    "socket.io": "^1.3.7"
   }
 }

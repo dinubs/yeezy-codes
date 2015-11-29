@@ -1,0 +1,23 @@
+.navigation {
+  background: white;
+  color: white;
+  height: auto;
+  font: 'Open Sans';
+  text-align: left; }
+  .navigation ul {
+    list-style: none;
+    text-align: left; }
+    .navigation ul li {
+      display: inline; }
+      .navigation ul li a {
+        font: 'Open Sans';
+        color: #38393e;
+        font-weight: normal;
+        text-decoration: none;
+        border: 1px solid #38393e;
+        padding: 5px 10px;
+        border-radius: 4px;
+        margin: 5px; }
+    .navigation ul .logo a {
+      border: none;
+      text-transform: uppercase; }

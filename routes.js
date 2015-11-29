@@ -1,8 +1,6 @@
 var c = require('./controllers/index');
 
 module.exports = function(server) {
-  // Base routes
-  server.route({method: 'GET', path: '/', handler: c.Base.index});
 
   // Static files
   server.route({
@@ -19,4 +17,11 @@ module.exports = function(server) {
           reply.file("./public/js/"+request.params.file+".js");
       }
   });
+
+
+  // Node runner
+  server.route({method: 'GET', path: '/node', handler: c.Base.socketIO});
+
+  // Base routes
+  server.route({method: 'GET', path: '/{path*}', handler: c.Base.index});
 };
