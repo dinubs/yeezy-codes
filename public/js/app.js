@@ -23,24 +23,24 @@ website.config(function($locationProvider, $stateProvider) {
 
         .state('home', {
             url: '/',
-            templateUrl: 'templates/home.html',
+            templateUrl: '/templates/home.html',
             controller: 'homeCtrl'
         })
         .state('leftTab', {
-            abstract: true,
             url: '/tutorials',
-            templateUrl: 'templates/leftTab.html',
+            templateUrl: '/templates/leftTab.html',
             controller: 'leftTabCtrl'
         })
         .state('leftTab.intro', {
-            templateUrl: 'templates/intro.html'
+            url: '/intro',
+            templateUrl: '/templates/intro.html'
         })
         .state('leftTab.css', {
             url: '/css',
-            templateUrl: 'templates/htmlcss.html'
+            templateUrl: '/templates/htmlcss.html'
         })
         .state('leftTab.javascript', {
             url: '/javascript',
-            templateUrl: 'templates/javascript.html'
+            templateUrl: '/templates/javascript.html'
         });
 });
