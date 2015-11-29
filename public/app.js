@@ -5,9 +5,10 @@ website.run(function ($state, $rootScope, $stateParams) {
     //makes states work with html5
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
+    $state.go('home')
 });
 
-website.config(function() {
+website.config(function($locationProvider, $stateProvider) {
 //enables html5 mode
     $locationProvider
         .html5Mode(
@@ -22,10 +23,12 @@ website.config(function() {
 
         .state('home', {
             url: '/',
-            templateUrl: '.html',
-            controller: 'homeCtrl',
-            data: {
-                requireLogin: false
-            }
+            templateUrl: 'templates/home.html',
+            controller: 'homeCtrl'
+        })
+        .state('leftTab', {
+            abstract: true,
+            templateUrl: 'templates/leftTab.html',
+            controller: 'leftTabCtrl'
         });
 });
