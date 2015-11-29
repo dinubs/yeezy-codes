@@ -16,14 +16,12 @@ webctrl.controller('leftTabCtrl', function($scope, $state) {
     }, {
         class: 'css',
         content: 'HTML and CSS',
-        whichstate: 'htmlcss',
+        whichstate: 'css',
         subCats: ['test', 'test again']
     }, {
         class: 'javascript',
         whichstate: 'javascript',
         content: 'Javascript'
-    }, {
-
     }];
 
     $scope.products = leftTabContent;

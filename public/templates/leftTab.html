@@ -1,7 +1,7 @@
 <body ui-view>
     <div class="wrap">
-        <div class="col-3 leftnav">
-            <div class="content" ng-repeat="product in products">
+        <div class="col-3 sidebar">
+            <ul class="content">
                 <!--the class is to indent or changee how the side bar looks if neccessary -->
                 <!--change sidebar contents by going to the leftabctrl-->
 
@@ -12,13 +12,14 @@
             <!--ng class is changing the sub cats class so that it expands ng-click changes ngclick handles which class it is -->
             <!--ng show is set to the state name so that we can simply inject it into that function-->
             <!--the second ng repeat is doing the subcats-->
-            <div class="{{product.class}}" ui-sref="leftTab.{{product.whichstate}}" ng-click="do_i_show_sub_cats(product.whichstate)">
+                <li ng-repeat="product in products" class="{{product.class}}" ui-sref="leftTab.{{product.whichstate}}" ng-click="do_i_show_sub_cats(product.whichstate)">
 
-                  {{product.content}}
-                <!-- <div class="subcats" ng-class="class_{{product.whichstate}}" ng-show="{{product.whichstate}}" ng-repeat="subcat in product.subCats">
-                    <p ng-click="showSubCatContent(subcat)">{{subcat}}</p> -->
-                </div>
-            </div>
+                      <a ui-sref="leftTab.{{product.whichstate}}">{{product.content}}</a>
+                    <!-- <div class="subcats" ng-class="class_{{product.whichstate}}" ng-show="{{product.whichstate}}" ng-repeat="subcat in product.subCats">
+                        <p ng-click="showSubCatContent(subcat)">{{subcat}}</p> -->
+                    <!-- </div> -->
+                </li>
+            </ul>
         </div>
         <div class="col-9" ui-view>
         </div>
