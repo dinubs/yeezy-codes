@@ -19,17 +19,15 @@ module.exports = function(server) {
   });
   server.route({
       method: 'GET',
-      path: '/template/{file}.js',
+      path: '/templates/{file}',
       handler: function (request, reply) {
-          reply.file("./public/templates/"+request.params.file+".js");
+          reply.file("./public/templates/"+request.params.file);
       }
   });
 
 
   // Node runner
   server.route({method: 'GET', path: '/node', handler: c.Base.socketIO});
-
-  server.route({method: 'GET', path: '/', handler: c.Base.landing});
 
   // Base routes
   server.route({method: 'GET', path: '/{path*}', handler: c.Base.index});
