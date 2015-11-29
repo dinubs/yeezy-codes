@@ -5,15 +5,18 @@ webctrl.controller('homeCtrl', function() {
 });
 
 webctrl.controller('leftTabCtrl', function() {
-    //this is the content located in the sidebar
 
+    //this is the content located in the sidebar
     var leftabcontent = [{
         class: 'test',
-        content: 'test'
+        whichstate: 'intro',
+        content: 'Introduction'
     }, {
         class: 'test2',
+        whichstate: 'javascript',
         content: 'testw'
     }];
+
     $scope.products = leftabcontent;
 
 });

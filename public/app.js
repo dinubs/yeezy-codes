@@ -30,5 +30,11 @@ website.config(function($locationProvider, $stateProvider) {
             abstract: true,
             templateUrl: 'templates/leftTab.html',
             controller: 'leftTabCtrl'
+        })
+        .state('leftTab.intro', {
+            template: '<p>introhere</p>'
+        })
+        .state('leftTab.javascript', {
+            template: '<p>test</p>'
         });
 });

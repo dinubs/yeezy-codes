@@ -3,7 +3,7 @@
         <div class="content" ng-repeat="product in products">
             <!--the class is to indent or changee how the side bar looks if neccessary -->
             <!--change sidebar contents by going to the leftabctrl-->
-            <div class="{{product.class}}">{{product.content}}</div>
+            <div class="{{product.class}}" ui-sref="leftTab.{{product.whichstate}}">{{product.content}}</div>
         </div>
     </div>
 </body>
