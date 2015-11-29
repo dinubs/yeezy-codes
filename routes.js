@@ -19,6 +19,9 @@ module.exports = function(server) {
   });
 
 
+  // Node runner
+  server.route({method: 'GET', path: '/node', handler: c.Base.socketIO});
+
   // Base routes
   server.route({method: 'GET', path: '/{path*}', handler: c.Base.index});
 };

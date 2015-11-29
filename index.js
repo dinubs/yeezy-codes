@@ -6,6 +6,8 @@ var Hapi = require('hapi');
 var server = new Hapi.Server();
 server.connection({port: process.env.PORT || 3000});
 
+require('./socket')(server);
+
 server.views({
   engines: {
     jade: require('jade')
