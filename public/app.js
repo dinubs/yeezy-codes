@@ -32,7 +32,10 @@ website.config(function($locationProvider, $stateProvider) {
             controller: 'leftTabCtrl'
         })
         .state('leftTab.intro', {
-            template: '<p>introhere</p>'
+            templateUrl: 'templates/intro.html'
+        })
+        .state('leftTab.htmlcss', {
+            templateUrl: 'templates/htmlcss.html'
         })
         .state('leftTab.javascript', {
             template: '<p>test</p>'

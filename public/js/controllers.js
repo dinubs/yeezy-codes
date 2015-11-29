@@ -14,6 +14,11 @@ webctrl.controller('leftTabCtrl', function($scope, $state) {
         //sub catagories
         subCats: ['test', 'testtyytesst']
     }, {
+        class: 'test',
+        content: 'HTML and CSS',
+        whichstate: 'htmlcss'
+        subCats: ['test', 'test again']
+    }, {
         class: 'test2',
         whichstate: 'javascript',
         content: 'testw'
