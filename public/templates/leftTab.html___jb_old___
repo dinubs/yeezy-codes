@@ -15,9 +15,7 @@
             <div>
 
                 <p  class="{{product.class}}" ui-sref="leftTab.{{product.whichstate}}" ng-click="do_i_show_sub_cats({{product.whichstate}})">{{product.content}}</p>
-                <div class="subcats" ng-class="class_{{product.whichstate}}" ng-show="{{product.whichstate}}" ng-repeat="subcat in product.subCats">
-                    <p ng-click="showSubCatContent({{subcat}})">{{subcat}}</p>
-                </div>
+                <div class="subcats" ng-class="class_{{product.whichstate}}" ng-show="{{product.whichstate}}" ng-repeat="subcat in product.subCats">{{subcat}}</div>
             </div>
         </div>
     </div>
