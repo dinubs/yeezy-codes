@@ -17,6 +17,13 @@ module.exports = function(server) {
           reply.file("./public/js/"+request.params.file+".js");
       }
   });
+  server.route({
+      method: 'GET',
+      path: '/template/{file}.js',
+      handler: function (request, reply) {
+          reply.file("./public/templates/"+request.params.file+".js");
+      }
+  });
 
 
   // Node runner
