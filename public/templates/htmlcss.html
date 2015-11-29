@@ -1,0 +1,58 @@
+<body ui-view>
+
+    <!--use this tag to write in markdown-->
+    <!--source-->
+    <!--https://github.com/btford/angular-markdown-directive-->
+    <btf-markdown class="main">
+        Usually most tutorials teach css and html separately, but we are going to teach you both at the same time
+        because they go together and don't live without each other. html is the skeleton that holds everything together
+        and css is the skin that makes everything pretty.
+        the first thing we need to learn is about the syntax of html and it's pretty simple
+
+        ```html
+        <head>
+
+        </head>
+        <body>
+
+        </body>
+        ```
+
+        what you'll notice about this is that there is a < and > inside is head then there is a slash going through one
+        of them these are called tags they mark different parts of a page  head is just configuration that sets up things
+        for you
+        the body is where the content of the page goes now lets look at some examples
+    </btf-markdown>
+
+    <btf-markdown class="side">
+        ```html
+        <body>
+            hello world!
+            <p>hey again</p>
+            <h1>sup</h1>
+            <br>
+            learning yet?
+            <a>link</a>
+        </body>
+        ```
+    </btf-markdown>
+
+    <div class="example">
+        hello world!
+        <p>hey again</p>
+        <h1>sup</h1>
+        <br>
+        learning yet?
+        <a>link</a>
+    </div>
+
+    <btf-markdown>
+        notice what happens the p tag just means paragraph h1 is a header it makes the text bigger and you can use more
+        tags to change the size like this #h1# ##h2## ###h3### ####h4#### #####h5##### ######h6###### now youll notice
+        that the link doesn't work and that is because it is not setto go anywhere
+        finally there is the br tag which means break usually we will use css to do breaks
+
+
+    </btf-markdown>
+
+</body>

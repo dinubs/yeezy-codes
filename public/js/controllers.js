@@ -4,7 +4,7 @@ webctrl.controller('homeCtrl', function() {
 
 });
 
-webctrl.controller('leftTabCtrl', function() {
+webctrl.controller('leftTabCtrl', function($scope) {
 
     //this is the content located in the sidebar
     var leftabcontent = [{
