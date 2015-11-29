@@ -11,9 +11,8 @@ html(lang="en" ng-app="app")
     nav
       .wrap
         a.logo(href="/")=app_name
-        ul
-          li
-            a.link(href="/") Home
+        .links  
+          a.link(href="/") Home
     block content
     script(type="text/javascript", src="/js/angular.js")
     script(type="text/javascript", src="/js/angular-ui-router.js")

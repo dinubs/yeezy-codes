@@ -19,6 +19,13 @@ module.exports = function(server) {
   });
   server.route({
       method: 'GET',
+      path: '/img/{file}',
+      handler: function (request, reply) {
+          reply.file("./public/img/"+request.params.file);
+      }
+  });
+  server.route({
+      method: 'GET',
       path: '/templates/{file}',
       handler: function (request, reply) {
           reply.file("./public/templates/"+request.params.file);
