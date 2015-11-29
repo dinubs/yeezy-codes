@@ -29,12 +29,19 @@ website.config(function($locationProvider, $stateProvider) {
         .state('leftTab', {
             abstract: true,
             templateUrl: 'templates/leftTab.html',
-            controller: 'leftTabCtrl'
+            controller: 'leftTabCtrl',
+            url: '/tut'
         })
         .state('leftTab.intro', {
-            template: '<p>introhere</p>'
+            templateUrl: 'templates/intro.html',
+            url: '/intro'
+        })
+        .state('leftTab.htmlcss', {
+            templateUrl: 'templates/htmlcss.html',
+            url: '/htmlcss'
         })
         .state('leftTab.javascript', {
-            template: '<p>test</p>'
+            template: '<p>test</p>',
+            url: '/javascript'
         });
 });
