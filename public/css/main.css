@@ -49,13 +49,15 @@ button {
     background-color: #ae010d; }
 
 .col-3 {
-  width: 25%; }
+  width: 25%;
+  float: left; }
   @media (max-width: 480px) {
     .col-3 {
       width: 100%; } }
 
 .col-9 {
-  width: 75%; }
+  width: 75%;
+  float: left; }
   @media (max-width: 480px) {
     .col-9 {
       width: 100%; } }
